@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Suma de Números Pares</title>
+</head>
+<body>
+    <h1>Calculadora de Suma de Números Pares</h1>
+    <form method="POST">
+        <label for="inicio">Número de inicio:</label>
+        <input type="number" name="inicio" required>
+        <br>
+        <label for="fin">Número de fin:</label>
+        <input type="number" name="fin" required>
+        <br>
+        <input type="submit" value="Calcular">
+    </form>
+    
+    {% if resultado %}
+    <p>{{ resultado }}</p>
+    {% endif %}
+</body>
+</html>
